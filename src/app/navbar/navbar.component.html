@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #e3f2fd;">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Publishers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Campaigns</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Offers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Create Offer</a>
+          <a class="dropdown-item" href="#">Search Offers</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <span class="navbar-text text-center mr-3">Session
+    <br>{{timeleft | minuteSeconds}}</span>
+
+  <button class="nav-item btn btn-sm" (click)="onLogout()" type="button">Log out</button>
+
+</nav>
